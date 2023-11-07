@@ -13,7 +13,7 @@ body{
     height: 100vh;
     position: right;
     background-image: url(Standing1.png);
-    background-size: cover;
+    background-size: 90% 100%;
     background-position: center;
 }
 .container{
@@ -118,7 +118,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px o;
+    margin: 10px 0;
 
 }
 .tab-contents ul li span{
@@ -311,8 +311,45 @@ form .btn2{
     color: #ff004f;
 }
 /*--------css for small scrren------*/
+nav .fas{
+    display: none;
+}
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(binary-5137349_640.jpg);
+        background-image: url(background-4518359_1280.jpg);
+        background-size: cover;
+        
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 }
